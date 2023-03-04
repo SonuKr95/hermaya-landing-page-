@@ -1,0 +1,35 @@
+@media only screen and (min-width: 767px) and (max-width: 1919px) {
+  .arrow-sign {
+    left: 48%;
+    &.arrow-sign-white {
+      left: 90%;
+    }
+  }
+  .container.container-footer .hyperlinks {
+    display: flex;
+    padding: 0%;
+    & .links {
+      a {
+        padding: 0px 50px 0px 0px;
+      }
+    }
+  }
+  .btn--center--whitebg {
+    // display: inline-block;
+    margin-top: -62px;
+    margin-left: 75%;
+    margin-bottom: 30px;
+  }
+  .contact {
+    position: relative;
+    // flex-direction: column;
+  }
+  .socialmedia {
+    position: absolute;
+    top: 0;
+    left: 70%;
+  }
+  .contact .details :nth-child(1) {
+    flex-basis: 15%;
+  }
+}

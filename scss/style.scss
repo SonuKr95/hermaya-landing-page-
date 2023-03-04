@@ -132,7 +132,7 @@ header {
   &.container--green-main {
     background-color: #c7fb7b;
     margin-bottom: 150px;
-    width: 320px;
+    // width: 320px;
     height: 497px;
   }
   .text_box {
@@ -231,7 +231,7 @@ header {
       background-color: #000000;
       color: #fff;
       padding: 0px;
-      width: 320px;
+      // width: 320px;
       height: 290px;
       // margin: 0px;
       h4 {
@@ -319,7 +319,7 @@ header {
       }
     }
     & input {
-      width: 320px;
+      width: 90vw;
       height: 51px;
       border: 1px solid #e6e0e0;
       padding: 10px;
@@ -334,14 +334,14 @@ header {
   }
   &.container-footer {
     // border: 1px solid green;
-    padding: 40px 25px;
+    padding: 40px 25px 10px 25px;
     border-radius: 0px;
     background-color: #000000;
     color: #fff;
     margin-bottom: 0px;
     // border: none;
     // padding: 0;
-    height: 700px;
+    // height: 700px;
     & .footer-logo {
       display: flex;
       flex-direction: row;
@@ -371,11 +371,19 @@ header {
       height: 1px;
       // border-radius: 15px;
       margin-top: 86px;
-      margin-bottom: 0px;
+      // margin-bottom: 0px;
       opacity: 0.5;
       background-color: #ffffff;
+      & + p {
+        margin-top: 10px;
+        text-align: center;
+      }
     }
   }
+}
+.text-ctr {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .arrow-sign {
@@ -391,13 +399,16 @@ header {
   border-radius: 50%;
 
   bottom: -22px;
-  left: 40%;
+  left: 42%;
   &.arrow-sign-white {
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #000;
     bottom: -40px;
-    left: 80%;
+    left: 87%;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 .container-prices {
@@ -460,31 +471,39 @@ header {
   }
 }
 .contact {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   & .details {
     display: flex;
     margin-bottom: 20px;
+    // justify-content: space-between;
     // & p:nth-child(2) {
     //   background-color: #9cfb7b;
+    & :nth-child(1) {
+      flex-basis: 30%;
+    }
+    & :nth-child(2) {
+      flex-basis: 70%;
+      // align-self: flex-end;
+    }
     // }
 
-    p {
-      width: 50%;
-      // margin-left: -10px;
-    }
+    // p {
+    //   width: 50%;
+    //   // margin-left: -10px;
+    // }
 
-    & .email {
-      margin-right: 30px;
-    }
-    & .phone {
-      margin-right: 90px;
-    }
+    // & .email {
+    //   margin-right: 30px;
+    // }
+    // & .phone {
+    //   margin-right: 90px;
+    // }
   }
 }
 
 .socialmedia {
-  height: 10px;
+  // height: 10px;
   & .icons {
     border-radius: 50%;
     // background-color: #cd0a0a;
@@ -504,3 +523,4 @@ header {
     text-align: center;
   }
 }
+@import "_mediaqueries";

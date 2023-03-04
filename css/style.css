@@ -122,7 +122,6 @@ header {
 .container.container--green-main {
   background-color: #c7fb7b;
   margin-bottom: 150px;
-  width: 320px;
   height: 497px;
 }
 .container .text_box {
@@ -207,7 +206,6 @@ header {
   background-color: #000000;
   color: #fff;
   padding: 0px;
-  width: 320px;
   height: 290px;
 }
 .container .container--services.container--services--black h4 {
@@ -278,7 +276,7 @@ header {
   text-align: center;
 }
 .container.container--contact--form input {
-  width: 320px;
+  width: 90vw;
   height: 51px;
   border: 1px solid #e6e0e0;
   padding: 10px;
@@ -291,12 +289,11 @@ header {
   line-height: 24px;
 }
 .container.container-footer {
-  padding: 40px 25px;
+  padding: 40px 25px 10px 25px;
   border-radius: 0px;
   background-color: #000000;
   color: #fff;
   margin-bottom: 0px;
-  height: 700px;
 }
 .container.container-footer .footer-logo {
   display: flex;
@@ -324,9 +321,17 @@ header {
 .container.container-footer .horizontal-line {
   height: 1px;
   margin-top: 86px;
-  margin-bottom: 0px;
   opacity: 0.5;
   background-color: #ffffff;
+}
+.container.container-footer .horizontal-line + p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.text-ctr {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .arrow-sign {
@@ -341,14 +346,17 @@ header {
   height: 60px;
   border-radius: 50%;
   bottom: -22px;
-  left: 40%;
+  left: 42%;
 }
 .arrow-sign.arrow-sign-white {
   background-color: #ffffff;
   color: #000000;
   border: 1px solid #000;
   bottom: -40px;
-  left: 80%;
+  left: 87%;
+}
+.arrow-sign:hover {
+  cursor: pointer;
 }
 
 .container-prices {
@@ -406,27 +414,17 @@ header {
   text-decoration: underline;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-}
 .contact .details {
   display: flex;
   margin-bottom: 20px;
 }
-.contact .details p {
-  width: 50%;
+.contact .details :nth-child(1) {
+  flex-basis: 30%;
 }
-.contact .details .email {
-  margin-right: 30px;
-}
-.contact .details .phone {
-  margin-right: 90px;
+.contact .details :nth-child(2) {
+  flex-basis: 70%;
 }
 
-.socialmedia {
-  height: 10px;
-}
 .socialmedia .icons {
   border-radius: 50%;
 }
@@ -442,4 +440,36 @@ header {
 .socialmedia p:last-child {
   color: #b3acac;
   text-align: center;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1919px) {
+  .arrow-sign {
+    left: 48%;
+  }
+  .arrow-sign.arrow-sign-white {
+    left: 90%;
+  }
+  .container.container-footer .hyperlinks {
+    display: flex;
+    padding: 0%;
+  }
+  .container.container-footer .hyperlinks .links a {
+    padding: 0px 50px 0px 0px;
+  }
+  .btn--center--whitebg {
+    margin-top: -62px;
+    margin-left: 75%;
+    margin-bottom: 30px;
+  }
+  .contact {
+    position: relative;
+  }
+  .socialmedia {
+    position: absolute;
+    top: 0;
+    left: 70%;
+  }
+  .contact .details :nth-child(1) {
+    flex-basis: 15%;
+  }
 }
