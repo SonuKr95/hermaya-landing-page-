@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
 img {
   max-width: 100%;
 }
@@ -142,7 +147,6 @@ header {
 }
 .container.container--white {
   background-color: #e6e0e0;
-  height: 738px;
   margin-bottom: 300px;
 }
 .container.container--white h2 {
@@ -219,11 +223,9 @@ header {
 }
 .container .container--services.container--services--green {
   background-color: #c7fb7b;
-  height: 324px;
 }
 .container .container--services.container--services--white {
   background-color: #e6e0e0;
-  height: 324px;
   margin-bottom: 120px;
 }
 .container.container--creators {
@@ -442,7 +444,7 @@ header {
   text-align: center;
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1919px) {
+@media only screen and (min-width: 767px) and (max-width: 1500px) {
   .arrow-sign {
     left: 48%;
   }
@@ -472,4 +474,111 @@ header {
   .contact .details :nth-child(1) {
     flex-basis: 15%;
   }
+}
+@media only screen and (min-width: 1300px) {
+  .hidden {
+    display: block;
+  }
+  #logo {
+    padding-left: 92px;
+  }
+  header {
+    margin-bottom: 29px;
+  }
+  #navbar {
+    display: none;
+  }
+  .mobile-menu {
+    top: 65px;
+    left: 30%;
+    position: absolute;
+  }
+  .mobile-menu--options {
+    display: block;
+  }
+  .mobile-menu--options a {
+    padding: 0px 50px 0px 0px;
+  }
+  .mobile-menu--options a:nth-child(4) {
+    padding: 0px;
+    margin-right: 4vmin;
+  }
+  .main_container {
+    position: relative;
+    max-width: 1500px;
+    padding: 0px;
+    margin: 0px 240px;
+  }
+  .container.container--green-main {
+    background-image: linear-gradient(to right, #c7fb7b 40%, rgba(4, 255, 0, 0.1), rgba(253, 249, 249, 0.1) 80%), url(../assets/group-people-working-out-business-plan-office\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 200px;
+  }
+  .container.container--green-main .text_box {
+    width: 50%;
+  }
+  .arrow-sign {
+    width: 100px;
+    height: 100px;
+    bottom: -65px;
+    left: 46%;
+  }
+  .container .text_box h1,
+  .container .text_box h2,
+  .container .text_box h3 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 42px;
+  }
+  .container.container--white .text_box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .container.container--white .text_box h2 {
+    line-height: 76px;
+  }
+  .container.container--white .text_box p {
+    flex-basis: 95%;
+    align-self: baseline;
+    margin: auto 0;
+  }
+  .services-m {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+  }
+  .container--services.container--services--white {
+    grid-column: 2/3;
+    margin-top: 180px;
+  }
+  .container--services.container--services--black {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .container--services.container--services--green {
+    margin-top: 100px;
+  }
+  .container .container--services {
+    width: 390px;
+  }
+  .container-prices {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+    border: none;
+  }
+  .container-prices.container-prices--webdevelopment {
+    margin-top: -35rem;
+    margin-left: 28rem;
+  }
+  .container-prices.container-prices--blockchaindeveloment {
+    margin-top: -35rem;
+    margin-left: 57rem;
+  }
+}
+.container .container--creators--images {
+  text-align: center;
 }
