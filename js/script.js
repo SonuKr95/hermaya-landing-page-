@@ -11,4 +11,4 @@ navbar_icon.addEventListener("click", () => {
   // ver_bar2.style.transform = "rotate(-135deg) translateY(5px)";
   // ver_bar2.style.transform = "translateY(-15px)";
 });
-console.log(window.innerWidth);
+// console.log(window.innerWidth);
