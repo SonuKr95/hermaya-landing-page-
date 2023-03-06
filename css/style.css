@@ -507,7 +507,7 @@ header {
     position: relative;
     max-width: 1500px;
     padding: 0px;
-    margin: 0px 240px;
+    margin: 0px 36px;
   }
   .container.container--green-main {
     background-image: linear-gradient(to right, #c7fb7b 40%, rgba(4, 255, 0, 0.1), rgba(253, 249, 249, 0.1) 80%), url(../assets/group-people-working-out-business-plan-office\ 1.png);
